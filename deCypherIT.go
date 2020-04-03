@@ -210,7 +210,6 @@ func removeFuncs(iterations int, lines []string) []string {
  
             // if the function is just used once, find it and dont write it to the file
             if occurences == 1 {
-                fmt.Println(result["Name"])
                 unusedFuncs = append(unusedFuncs, result["Name"])
             }
         }
